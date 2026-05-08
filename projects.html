@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Vishwas R.S</title>
+  <meta name="description" content="Projects built by Vishwas R.S — IoT, AI/ML and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .filter-bar { display:flex; gap:0.6rem; flex-wrap:wrap; margin-bottom:2rem; }
+    .filter-btn {
+      padding:0.4rem 1.1rem; border-radius:50px; font-size:0.82rem; font-weight:600;
+      border:1px solid var(--border); background:transparent; color:var(--muted);
+      cursor:pointer; transition:all var(--transition);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      border-color:var(--primary); color:var(--primary); background:rgba(56,189,248,0.08);
+    }
+    .project-card-wrap { display:block; }
+  </style>
+</head>
+<body>
+<div id="loader"><div class="loader-ring"></div></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">VRS</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+    <button class="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="education.html">Education</a>
+  <a href="certifications.html">Certifications</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main class="page-wrapper">
+  <section class="section">
+    <div class="section-inner">
+
+      <div class="reveal">
+        <div class="section-tag">My Work</div>
+        <h1 class="section-title">Projects</h1>
+        <p class="section-subtitle">Hands-on projects built using Arduino, Python, and embedded systems.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <div class="project-card-wrap reveal" data-category="iot">
+          <div class="card project-card">
+            <div class="project-header">
+              <div class="project-icon">🔐</div>
+              <div>
+                <div class="project-title">Smart Biometric Seat Identification System</div>
+                <div class="project-year">2024 — 2025</div>
+              </div>
+            </div>
+            <p class="project-desc">
+              Built a fingerprint-based seat detection system using Arduino UNO and R307 optical sensor.
+              LED indicators are mapped to each seat via Arduino EEPROM — no external database needed.
+              Enrollment and verification phases implemented with the Adafruit_Fingerprint library.
+            </p>
+            <div style="margin-bottom:0.25rem;">
+              <div style="font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:0.5rem;">Key Highlights</div>
+              <ul style="color:var(--muted);font-size:0.85rem;padding-left:1rem;display:flex;flex-direction:column;gap:0.3rem;">
+                <li style="position:relative;padding-left:0.75rem;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>Fingerprint enrollment &amp; verification phases</li>
+                <li style="position:relative;padding-left:0.75rem;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>EEPROM-based storage — no external database</li>
+                <li style="position:relative;padding-left:0.75rem;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>LED indicators per seat for real-time status</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-badge">Arduino UNO</span>
+              <span class="tech-badge">C++</span>
+              <span class="tech-badge">R307 Sensor</span>
+              <span class="tech-badge">EEPROM</span>
+              <span class="tech-badge">SoftwareSerial</span>
+              <span class="tech-badge">Active Buzzer</span>
+              <span class="tech-badge">Adafruit Fingerprint</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vishwas-rs-dev" target="_blank" class="btn btn-outline btn-sm" style="font-size:0.82rem;padding:0.45rem 1rem;">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Note -->
+      <div class="reveal" style="margin-top:2.5rem;">
+        <div class="card" style="text-align:center;padding:2rem;border-style:dashed;">
+          <i class="fas fa-code-branch" style="font-size:2rem;color:var(--primary);opacity:0.5;margin-bottom:0.75rem;display:block;"></i>
+          <p style="color:var(--muted);font-size:0.9rem;">More projects coming soon — currently building during my AI/ML internship at AIkshetra-Tech Solutions.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span class="footer-logo">Vishwas R.S</span>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/vishwas-rs-dev" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/vishwas-rs" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:shobhavishu2005@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Vishwas R.S · Built with passion &amp; precision</div>
+  </div>
+</footer>
+<button id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

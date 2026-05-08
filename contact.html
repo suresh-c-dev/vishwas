@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Vishwas R.S</title>
+  <meta name="description" content="Contact Vishwas R.S — email, phone, and social links." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<div id="loader"><div class="loader-ring"></div></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">VRS</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+    <button class="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="education.html">Education</a>
+  <a href="certifications.html">Certifications</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main class="page-wrapper">
+  <section class="section">
+    <div class="section-inner">
+
+      <div class="reveal">
+        <div class="section-tag">Get In Touch</div>
+        <h1 class="section-title">Contact Me</h1>
+        <p class="section-subtitle">Feel free to reach out for opportunities, collaborations, or just to connect.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info column -->
+        <div class="contact-info">
+          <div class="contact-item reveal">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <a href="mailto:shobhavishu2005@gmail.com" class="contact-item-value" style="color:var(--primary);">shobhavishu2005@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-1">
+            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <a href="tel:9380574369" class="contact-item-value" style="color:var(--primary);">9380574369</a>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-1">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-value">Ramashettihalli, Karnataka</div>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-2">
+            <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <div class="contact-item-label">GitHub</div>
+              <a href="https://github.com/vishwas-rs-dev" target="_blank" class="contact-item-value" style="color:var(--primary);">github.com/vishwas-rs-dev</a>
+            </div>
+          </div>
+          <div class="contact-item reveal reveal-delay-2">
+            <div class="contact-item-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <div class="contact-item-label">LinkedIn</div>
+              <a href="https://linkedin.com/in/vishwas-rs" target="_blank" class="contact-item-value" style="color:var(--primary);">linkedin.com/in/vishwas rs</a>
+            </div>
+          </div>
+
+          <!-- Direct email button -->
+          <a href="mailto:shobhavishu2005@gmail.com" class="btn btn-primary reveal reveal-delay-3" style="margin-top:0.5rem;">
+            <i class="fas fa-paper-plane"></i> Send an Email
+          </a>
+        </div>
+
+        <!-- Form column -->
+        <div class="card reveal reveal-delay-1">
+          <h2 style="font-size:1.05rem;font-weight:700;margin-bottom:1.25rem;">Send a Message</h2>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="contactName">Full Name</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Your name" autocomplete="name" />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="your@email.com" autocomplete="email" />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" class="form-control" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Message</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Your message..."></textarea>
+              <span class="form-error" id="msgError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle" style="margin-right:0.5rem;"></i>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span class="footer-logo">Vishwas R.S</span>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/vishwas-rs-dev" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/vishwas-rs" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:shobhavishu2005@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Vishwas R.S · Built with passion &amp; precision</div>
+  </div>
+</footer>
+<button id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

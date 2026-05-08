@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Vishwas R.S</title>
+  <meta name="description" content="Resume of Vishwas R.S — view and download." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    @media print {
+      .navbar, footer, #scrollTop, .resume-download-bar, #loader, #particles-canvas { display:none !important; }
+      .page-wrapper { padding-top:0 !important; }
+      .resume-embed-wrap { height:auto; border:none; box-shadow:none; }
+      .resume-embed-wrap iframe { height:100vh; }
+    }
+  </style>
+</head>
+<body>
+<div id="loader"><div class="loader-ring"></div></div>
+<canvas id="particles-canvas"></canvas>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">VRS</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-controls">
+    <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+    <button class="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="education.html">Education</a>
+  <a href="certifications.html">Certifications</a>
+  <a href="resume.html">Resume</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main class="page-wrapper">
+  <section class="section">
+    <div class="section-inner">
+
+      <div class="reveal">
+        <div class="section-tag">My Resume</div>
+        <h1 class="section-title">Resume</h1>
+        <p class="section-subtitle">View my full resume below or download the PDF version.</p>
+      </div>
+
+      <!-- Download bar -->
+      <div class="resume-download-bar reveal">
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+          <i class="fas fa-file-pdf" style="color:var(--primary);font-size:1.2rem;"></i>
+          <span style="font-size:0.9rem;color:var(--muted);">Vishwas_RS_Resume.pdf</span>
+        </div>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+          <a href="assets/resume/vishwas_resume.pdf" download class="btn btn-primary" style="font-size:0.85rem;padding:0.55rem 1.2rem;">
+            <i class="fas fa-download"></i> Download PDF
+          </a>
+          <button onclick="window.print()" class="btn btn-ghost" style="font-size:0.85rem;padding:0.55rem 1.2rem;">
+            <i class="fas fa-print"></i> Print
+          </button>
+        </div>
+      </div>
+
+      <!-- Resume Inline Preview (HTML version) -->
+      <div class="card reveal" style="padding:2.5rem 2.5rem;">
+        <!-- Header -->
+        <div style="text-align:center;border-bottom:1px solid var(--border);padding-bottom:1.5rem;margin-bottom:1.5rem;">
+          <h2 style="font-size:1.8rem;font-weight:800;margin-bottom:0.4rem;">Vishwas R.S</h2>
+          <div style="color:var(--muted);font-size:0.88rem;display:flex;flex-wrap:wrap;gap:0.5rem 1.25rem;justify-content:center;">
+            <span><i class="fas fa-map-marker-alt" style="color:var(--primary);margin-right:0.35rem;"></i>Ramashettihalli, Karnataka</span>
+            <span><i class="fas fa-envelope" style="color:var(--primary);margin-right:0.35rem;"></i>shobhavishu2005@gmail.com</span>
+            <span><i class="fas fa-phone" style="color:var(--primary);margin-right:0.35rem;"></i>9380574369</span>
+            <a href="https://github.com/vishwas-rs-dev" target="_blank" style="color:var(--muted);"><i class="fab fa-github" style="color:var(--primary);margin-right:0.35rem;"></i>github.com/vishwas-rs-dev</a>
+            <a href="https://linkedin.com/in/vishwas-rs" target="_blank" style="color:var(--muted);"><i class="fab fa-linkedin" style="color:var(--primary);margin-right:0.35rem;"></i>linkedin.com/in/vishwas rs</a>
+          </div>
+        </div>
+
+        <!-- Objective -->
+        <div style="margin-bottom:1.5rem;">
+          <div class="section-tag" style="margin-bottom:0.75rem;font-size:0.72rem;">Objective</div>
+          <p style="color:var(--muted);font-size:0.9rem;line-height:1.8;">
+            Final-year BCA student with hands-on experience in Python, Machine Learning, and IoT systems. Seeking an entry-level AI/ML Engineer role where I can apply my project experience and grow in real-world AI development.
+          </p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div style="margin-bottom:1.5rem;">
+          <div class="section-tag" style="margin-bottom:0.75rem;font-size:0.72rem;">Technical Skills</div>
+          <table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:0.5rem 0;color:var(--muted);width:120px;font-weight:600;">Languages</td>
+              <td style="padding:0.5rem 0;color:var(--text);">Python, SQL, C (basics)</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:0.5rem 0;color:var(--muted);font-weight:600;">Tools</td>
+              <td style="padding:0.5rem 0;color:var(--text);">VS Code, Git, GitHub, Arduino IDE, Jupyter Notebook</td>
+            </tr>
+            <tr>
+              <td style="padding:0.5rem 0;color:var(--muted);font-weight:600;">Databases</td>
+              <td style="padding:0.5rem 0;color:var(--text);">MySQL</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Projects -->
+        <div style="margin-bottom:1.5rem;">
+          <div class="section-tag" style="margin-bottom:0.75rem;font-size:0.72rem;">Projects</div>
+          <div style="margin-bottom:0.5rem;">
+            <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.25rem;">
+              <strong style="font-size:0.93rem;">Smart Biometric Seat Identification System</strong>
+              <span style="color:var(--primary);font-size:0.82rem;">IoT + Arduino · 2024–2025</span>
+            </div>
+            <ul style="margin-top:0.4rem;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:0.25rem;">
+              <li style="color:var(--muted);font-size:0.87rem;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>Built a fingerprint-based seat detection system using Arduino UNO and R307 optical sensor</li>
+              <li style="color:var(--muted);font-size:0.87rem;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>LED indicators mapped to each seat via Arduino EEPROM — no external database needed</li>
+              <li style="color:var(--muted);font-size:0.87rem;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>Enrollment + verification phases implemented with Adafruit_Fingerprint library</li>
+              <li style="color:var(--muted);font-size:0.87rem;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>Tech used: Arduino, C++, SoftwareSerial, EEPROM, Active Buzzer</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Internship -->
+        <div style="margin-bottom:1.5rem;">
+          <div class="section-tag" style="margin-bottom:0.75rem;font-size:0.72rem;">Internship / Experience</div>
+          <div>
+            <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.25rem;">
+              <strong style="font-size:0.93rem;">AIkshetra-Tech Solutions Pvt. Ltd.</strong>
+              <span style="color:var(--primary);font-size:0.82rem;">April 2026 — Present</span>
+            </div>
+            <ul style="margin-top:0.4rem;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:0.25rem;">
+              <li style="color:var(--muted);font-size:0.87rem;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>Undergoing hands-on training in AI/ML concepts and workflows</li>
+              <li style="color:var(--muted);font-size:0.87rem;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>Gaining exposure to real-world AI project development</li>
+              <li style="color:var(--muted);font-size:0.87rem;padding-left:1rem;position:relative;"><span style="position:absolute;left:0;color:var(--primary);">▸</span>Learning industry practices under professional mentorship</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <div class="section-tag" style="margin-bottom:0.75rem;font-size:0.72rem;">Education</div>
+          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.25rem;">
+            <div>
+              <strong style="font-size:0.93rem;">Bachelor of Computer Applications (BCA)</strong>
+              <div style="color:var(--muted);font-size:0.87rem;margin-top:0.15rem;">Govt First Grade College, Tiptur</div>
+            </div>
+            <span style="color:var(--primary);font-size:0.82rem;">2023 — 2026</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span class="footer-logo">Vishwas R.S</span>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/vishwas-rs-dev" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/vishwas-rs" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:shobhavishu2005@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Vishwas R.S · Built with passion &amp; precision</div>
+  </div>
+</footer>
+<button id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
